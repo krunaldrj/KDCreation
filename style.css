@@ -23,14 +23,10 @@ html{
 body{
     width: 60%;
     margin: auto;
-    background-image: url(BG.png);
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 h1{
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 400;
     color: #17191A;
 }
@@ -43,7 +39,7 @@ h1.heading {
 }
 
 h2{
-    font-size: 35px;
+    font-size: 50px;
     font-weight: 400;
     color: #17191A;
 }
@@ -101,17 +97,6 @@ p{
 
 /*-------------------landing-------------------*/
 
-.landing{
-    height: 90vh;
-    position: relative;
-}
-
-.landingwrapper{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-
 ul{
     list-style: none;
     margin-top: 30px;
@@ -122,23 +107,18 @@ ul{
     margin-top: 4em;
 }
 
-.landingR img {
+.landingR img{
+    margin-top: 45px;
+    float: right;
     border-radius: 49% 51% 70% 30% / 73% 39% 61% 27%;
-}
-
-.scroll{
-    position: absolute;
-    bottom: 180px;
-    left: 0;
-    right: 0;
-    margin: auto;
 }
 
 /*-------------------Skills-------------------*/
 
 .skills{
     text-align: center;
-    margin-bottom: 13em;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .skills p{
@@ -152,94 +132,74 @@ ul{
 
 /*-------------------Work1-------------------*/
 
-.work{
-    width: 100%;
-    position: relative;
-    margin-bottom: 13em;
-}
-
-.work > .workText{
-    position: absolute;
-    top: 85;
-}
-
-.work > .workText > .underline{
+.workText > .underline{
     display: block;
     background-color: #027BFF;
     height: 3px;
     width: 61px;
     margin-top: 5px;
+    margin-left: 44%;
 }
 
-.work > .workImg{
-    width: 80%;
-    float: right;
-    -webkit-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.06);
-    -moz-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
-    box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
-}
-
-.work ul{
-    position: absolute;
-    bottom: 0;
-    right: 86%;
-}
-
-.work ul li{
-    margin-top: 20px;
-}
-
-/*-------------------Work2-------------------*/
-
-.work2{
+.workImg{
     width: 100%;
-    position: relative;
-    margin-bottom: 13em;
-}
-
-.work2 > .workText{
-    position: absolute;
-    top: 15px;
-    right: -40px;
-    text-align: right;
-}
-
-.work2 > .workText > .underline{
-    display: block;
-    background-color: #027BFF;
-    height: 3px;
-    width: 61px;
-    margin-top: 5px;
-    float: right;
-}
-
-.work2 > .workImg{
-    width: 80%;
-    float: left;
     -webkit-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.06);
     -moz-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
     box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
 }
 
-.work2 ul{
-    position: absolute;
-    bottom: 0;
-    left: 86%;
+img.img-fluid.workImg {
+    margin-top: 100px;
 }
 
-.work2 ul li{
-    margin-top: 20px;
+.col-md-12.skills-info {
+    margin-top: 100px;
 }
 
-.work a, .work2 a{
+.workText {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+ul.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+.btn1{
     text-decoration: none;
-    color: #17191A;
+    font-weight: 600;
+    font-size: 13px;
+    text-align: center;
+    padding: 15px 45px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 10px;
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 0;
+    background-image: linear-gradient(#0B3FA4, #6770C2);
+    border: double 2px transparent;
+    box-shadow: 0 10px 30px rgba(118,85,255,.2);
+    border: none;
+    outline: none;
+}
+
+.btn1:hover{
+    border: 1px solid #4458dc;
+    color: #222;
+    background-color: #fff;
+    box-shadow: none;
+    background-image: none;
 }
 
 .box{
     width: 100%;
     text-align: center;
     margin-bottom: 10em;
+    margin-top: 10em;
 }
 
 h1.contact-title {
@@ -283,34 +243,6 @@ input[type="text"] {
     text-align: center;
 }
 
-.btn1{
-    margin-top: 40px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 13px;
-    text-align: center;
-    padding: 15px 45px;
-    cursor: pointer;
-    text-transform: uppercase;
-    border-radius: 10px;
-    display: inline-block;
-    color: #fff;
-    letter-spacing: 0;
-    background-image: linear-gradient(#0B3FA4, #6770C2);
-    border: double 2px transparent;
-    box-shadow: 0 10px 30px rgba(118,85,255,.2);
-    border: none;
-    outline: none;
-}
-
-.btn1:hover{
-    border: 1px solid #4458dc;
-    color: #222;
-    background-color: #fff;
-    box-shadow: none;
-    background-image: none;
-}
-
 /*-------------------footer-------------------*/
 
 .footer{
@@ -335,29 +267,27 @@ input[type="text"] {
     background-color: #027BFF;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .skills{
-        margin-top:100px;
-        margin-bottom:100px;
+@media only screen and (max-width: 768px){
+    h1.text-center.text-capitalize.pt-5{
+        font-size:35px;
     }
-    
+
+    .landingR img{
+        max-width:100%;
+        height:auto;
+        margin-top:70px;
+    }
+
+    .skills{
+        margin-top:60px;
+        margin-bottom:60px;
+    }
+
     .input-text{
         width:100%;
     }
 
-    .box{
-        text-align:center;
+    h2{
+        font-size:50px;
     }
-
-    .work, .work2{
-        margin-bottom:100px;
-    }
-
-    .workImg{
-        max-width:100%;
-        height:auto;
-    }
-    
-
 }
